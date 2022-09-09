@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.column {
+    float: left;
+    width: 50%;
+    flex: 50%;
+    border: 5px solid greenyellow;
+  }
+  .columnfaceapp {
+   
+    float: left;
+    width: 50%;
+    flex: 50%;
+    border: 5px solid red;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .row {
+    display: flex;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .left {
+    width: 25%;
+  }
+  
+  .right {
+    width: 75%;
+  }
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
